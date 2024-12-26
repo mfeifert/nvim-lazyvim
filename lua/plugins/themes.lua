@@ -1,13 +1,11 @@
---- Themes not included in LazyVim by default
-
 return {
+  -- Themes not included in LazyVim by default
   { "miikanissi/modus-themes.nvim" },
+  { "ellisonleao/gruvbox.nvim" },
   {
-    "ellisonleao/gruvbox.nvim",
-    config = function()
-      require("gruvbox").setup({
-        contrast = "hard",
-      })
-    end,
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "default", -- set theme here
+    },
   },
 }
