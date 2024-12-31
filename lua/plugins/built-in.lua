@@ -14,4 +14,13 @@ return {
       },
     },
   },
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "gopls",
+        "python-lsp-server",
+      },
+    },
+  },
 }
